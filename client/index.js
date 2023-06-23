@@ -16,7 +16,7 @@ async function collectHeimdallBlock() {
       console.error(`stderr: ${stderr}`);
       return;
     }
-    axios.get("https://heimdall.api.matic.network/blocks/latest").then(response => {
+    axios.get("https://heimdall-api.polygon.technology/blocks/latest").then(response => {
       console.log("Last Network block Heimdal", response.data.block_meta.header.height);
       const LAST_BLOCK_NETWORK_HEIMDALL = response.data.block_meta.header.height;
 
